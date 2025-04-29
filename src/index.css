@@ -26,5 +26,11 @@ span{
   .no-print {
     display: none !important;
   }
+  .main i{
+    font-size: 10px !important;
+  }
 }
+
+
+  
 
