@@ -1,3 +1,30 @@
 span{
     text-decoration: underline;
 }
+
+@media print {
+  body {
+    background: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+
+  .cv-container {
+    width: 100%;
+    height: auto;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    page-break-inside: avoid;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+
